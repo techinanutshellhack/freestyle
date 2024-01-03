@@ -1,0 +1,15 @@
+Script started on 2024-01-03 19:47:31+00:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="263" LINES="12"]
+                     waitForQualityGate abortPipeline: false, credentialsId: 'jenkins-sonarqube-token'
+                 }
+             }
+
+         }]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$                      waitForQualityGate abortPipeline: false, credentialsId: 'jenkins-sonarqube-token'
+waitForQualityGate: command not found
+]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$                  }
+bash: syntax error near unexpected token `}'
+]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$              }
+bash: syntax error near unexpected token `}'
+]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$ 
+]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$          }^C
+]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$ clear
+[H[2J[3J]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops
