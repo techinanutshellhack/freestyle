@@ -29,7 +29,7 @@ pipeline{
     
         stage("Checkout from SCM"){//check out the code from git repo into the jenkins workspace 
             steps {
-                git branch: 'jenkins', credentialsId: 'github', url: 'https://github.com/techinanutshellhack/production-devops.git'
+                git branch: 'jenkins', credentialsId: 'github', url: 'https://github.com/techinanutshellhack/freestyle.git'
             }
 
         }
@@ -41,12 +41,12 @@ pipeline{
 
         }
 
-        stage("Test Application"){// test application with maven
-            steps {
-                sh "mvn test"
-            }
+        // stage("Test Application"){// test application with maven
+        //     steps {
+        //         sh "mvn test"
+        //     }
 
-        }
+        // }
         
         stage("Sonarqube Analysis") {//send code from source code repo to sonarcube for analysis
             steps {
@@ -55,6 +55,12 @@ pipeline{
                         sh "mvn sonar:sonar"
                     }
                 }
+            }
+
+        }
+        stage("Test Application"){// test application with maven
+            steps {
+                sh "mvn test"
             }
 
         }
@@ -83,21 +89,21 @@ pipeline{
         //      }
 
         //  }
-        stage('Docker Build and Push'){
+    //     stage('Docker Build and Push'){
           
-          steps{
-            echo 'Packaging demo app with docker'
-            script{
-                    docker.withRegistry('',DOCKER_PASS ) {
-                            docker_image = docker.build "${IMAGE_NAME}"
-                           // docker_image.push()
-                            docker_image.push("${IMAGE_TAG}")
-                            docker_image.push("latest")
-                   // dockerImage = docker.build registry + "latest"
-              }
-            }
-          }
-      }
+    //       steps{
+    //         echo 'Packaging demo app with docker'
+    //         script{
+    //                 docker.withRegistry('',DOCKER_PASS ) {
+    //                         docker_image = docker.build "${IMAGE_NAME}"
+    //                        // docker_image.push()
+    //                         docker_image.push("${IMAGE_TAG}")
+    //                         docker_image.push("latest")
+    //                // dockerImage = docker.build registry + "latest"
+    //           }
+    //         }
+    //       }
+    //   }
        
 
     //      stage("Trivy Scan") {
@@ -119,16 +125,16 @@ pipeline{
     //      }
 
 
-         stage("Trigger CD Pipeline") {
-             steps {
-                 script {
-                     sh "curl -v -k --user admin:${JENKINS_API_TOKEN} -X POST -H 'cache-control: no-cache' -H 'content-type: application/x-www-form-urlencoded' --data 'IMAGE_TAG=${IMAGE_TAG}' 'http://localhost:8080/job/application/buildWithParameters?token=application'"
-                 }
-             }
+    //      stage("Trigger CD Pipeline") {
+    //          steps {
+    //              script {
+    //                  sh "curl -v -k --user admin:${JENKINS_API_TOKEN} -X POST -H 'cache-control: no-cache' -H 'content-type: application/x-www-form-urlencoded' --data 'IMAGE_TAG=${IMAGE_TAG}' 'http://localhost:8080/job/application/buildWithParameters?token=application'"
+    //              }
+    //          }
 
-         }
+    //      }
 
-     }
+    //  }
 
     //  post {
     //      failure {
