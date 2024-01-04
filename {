@@ -12,4 +12,23 @@ bash: syntax error near unexpected token `}'
 ]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$ 
 ]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$          }^C
 ]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$ clear
-[H[2J[3J]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops
+[H[2J[3J]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$ #clearkubectl port-forward svc/argocd-server -n argocd 8000:443clear[K[3Plsclearkubectl port-forward svc/argocd-server -n argocd 8000:443clear[K#[K[Kgit add .
+]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$ git commit -m "sonarqube"
+[main 7b2ccbc] sonarqube
+ 1 file changed, 17 insertions(+)
+ create mode 100644 {
+]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$ git push arigin main [K[K[K[K[K[K[K[K[K[K[K[K[K origin main
+Username for 'https://github.com': techinanutshellhack
+Password for 'https://techinanutshellhack@github.com': 
+Enumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 914 bytes | 26.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 2 local objects.[K
+To https://github.com/techinanutshellhack/freestyle.git
+   d68dfbd..7b2ccbc  main -> main
+]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$ [K]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$ [K]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$ [K]0;itohan@DESKTOP-2QRGBIK: /mnt/c/Devops_edureka/freestyle[01;32mitohan@DESKTOP-2QRGBIK[00m:[01;34m/mnt/c/Devops_edureka/freestyle[00m$ exit
+
+Script done on 2024-01-04 18:27:24+00:00 [COMMAND_EXIT_CODE="0"]
