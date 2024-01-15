@@ -1,7 +1,7 @@
 
 pipeline{
     agent{  //the agent is the vm that the all the dependencies for the jenkins pipeline to run in will be installed . in production , use a dedicated agent
-         label "built-in"
+         label "jenkins-agent"
          //label "wsl"
         //docker { image 'node:20.10.0-alpine3.19' }
     }
@@ -51,7 +51,7 @@ pipeline{
         stage("Sonarqube Analysis") {//send code from source code repo to sonarcube for analysis
             steps {
                 script {
-                    withSonarQubeEnv(credentialsId: 'jenkins-sonarqube-token') {
+                    withSonarQubeEnv(credentialsId: 'sonarqube-jenkins') {
                         sh "mvn sonar:sonar"
                     }
                 }
@@ -62,7 +62,7 @@ pipeline{
        stage("Quality Gate") {
              steps {
                 script {
-                     waitForQualityGate abortPipeline: false, credentialsId: 'jenkins-sonarqube-token'
+                     waitForQualityGate abortPipeline: false, credentialsId: 'sonarqube-jenkins'
                  }
              }
 
