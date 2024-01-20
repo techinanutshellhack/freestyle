@@ -80,24 +80,24 @@
                 </execution>
             </executions>
 			</plugin>
+			 <!-- Cobertura Maven Plugin -->
 			<plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>2.7</version> <!-- Use the latest version -->
-            <configuration>
-				<formats>
-					<format>html</format>
-					<format>xml</format>
-				<formats>
-				<reportSets>
-					<reportSet>
-						<reports>
-							 <report>cobertura</report>
-						</report>
-					</reportSet>
-				</reportSets>
-            </configuration>
-        </plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <!-- Configure Cobertura plugin options -->
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>clean</goal>
+                            <goal>instrument</goal>
+                            <goal>cobertura</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 		</plugins>
 	</build>
 
