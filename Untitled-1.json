@@ -1,0 +1,118 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "data": {
+                "password": "OFAtQjU1cGRMM1phV3NRRg=="
+            },
+            "kind": "Secret",
+            "metadata": {
+                "creationTimestamp": "2023-12-20T12:54:42Z",
+                "name": "argocd-initial-admin-secret",
+                "namespace": "argocd",
+                "resourceVersion": "1539989",
+                "uid": "009e6572-2100-4dfd-a3cc-13d42d70f97e"
+            },
+            "type": "Opaque"
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Secret",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Secret\",\"metadata\":{\"annotations\":{},\"labels\":{\"app.kubernetes.io/component\":\"notifications-controller\",\"app.kubernetes.io/name\":\"argocd-notifications-controller\",\"app.kubernetes.io/part-of\":\"argocd\"},\"name\":\"argocd-notifications-secret\",\"namespace\":\"argocd\"},\"type\":\"Opaque\"}\n"
+                },
+                "creationTimestamp": "2023-12-20T12:54:07Z",
+                "labels": {
+                    "app.kubernetes.io/component": "notifications-controller",
+                    "app.kubernetes.io/name": "argocd-notifications-controller",
+                    "app.kubernetes.io/part-of": "argocd"
+                },
+                "name": "argocd-notifications-secret",
+                "namespace": "argocd",
+                "resourceVersion": "1539786",
+                "uid": "dabc8527-ed9f-47e3-ac9c-e9d9c8285037"
+            },
+            "type": "Opaque"
+        },
+        {
+            "apiVersion": "v1",
+            "data": {
+                "admin.password": "JDJhJDEwJFQ0L1M2a0F3VUxaa0wyUjJaRHlUQy5Nc3prbXFHeThKNUl5M2h0ZmVUU292ZGU4b1BtSi5T",
+                "admin.passwordMtime": "MjAyMy0xMi0zMFQwMTo0MToxNFo=",
+                "server.secretkey": "RzZ6ZVVvSGpOMFZXYXlkb2g3V3BBa2lSWStsbExDUm15RVNva1FrTkg0QT0=",
+                "tls.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURZakNDQWtxZ0F3SUJBZ0lRWXVTRmpINVhVeVV0V0srK2hRS1pIVEFOQmdrcWhraUc5dzBCQVFzRkFEQVMKTVJBd0RnWURWUVFLRXdkQmNtZHZJRU5FTUI0WERUSXpNVEl5TURFeU5UUTBNbG9YRFRJME1USXhPVEV5TlRRMApNbG93RWpFUU1BNEdBMVVFQ2hNSFFYSm5ieUJEUkRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQUxzY2Z0MWxwbTBDN3N2QW0rRml5MS9DbXpJYVNMOUdYUm5nMU5RL1dzT1YvZFRLRlJxSXRQYlYKVXlVZGRPRks4aGFReFhTUmI1amtxeGVIZE5ha0J2YUFKbWhzNVM4SC9DeUlLUWFkRnR6ZmhwK2licVFIYkNDcApkRGk1b1llSGUxN21FblFnWVdneWRnNjR6aHMrSlNPc3FsRjAva1ZScktjMzdMaEljVVBndVpZL2hiWTg1UXlBClBNU0lTdVZVd0hDT2pLU3k0WmQyaGhHSzV6UTVDSW9HcWQ1a2U4MTJ1dk9iOVo3R0RnaUdCaHU0OHN1U0hVLzcKeDJjT24vRUxNQmc0UzJ5ZTZpcnVBNWowMDdUNUtJWkVQKzJMczk1Qk1RQjhkZTdXWW5PRCsvRzlPWVhGWEo2RgpBd1NoZlQ1T1FwVzZUbmxZd3AybVY2b0RCN2hCTEhFQ0F3RUFBYU9Cc3pDQnNEQU9CZ05WSFE4QkFmOEVCQU1DCkJhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUhBd0V3REFZRFZSMFRBUUgvQkFJd0FEQjdCZ05WSFJFRWREQnkKZ2dsc2IyTmhiR2h2YzNTQ0RXRnlaMjlqWkMxelpYSjJaWEtDRkdGeVoyOWpaQzF6WlhKMlpYSXVZWEpuYjJOawpnaGhoY21kdlkyUXRjMlZ5ZG1WeUxtRnlaMjlqWkM1emRtT0NKbUZ5WjI5alpDMXpaWEoyWlhJdVlYSm5iMk5rCkxuTjJZeTVqYkhWemRHVnlMbXh2WTJGc01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQm5tNS9oTGlVRWVwQmMKSS96N2RWZ0dtNVpVVzhKNlZ4NUNDN2NyeGxLcDB4TDNjb1k1Sm01MTNjVEMyMjBhY1RKa2NKWWluNjRESkNnNQpkTDVIMHphdXV5Y0FuR2tRbWlkMlNwdXpwOENldnRwajdLRWJYZE0vTVM1UXdYVDZSejIwM3RIT3Nxd0RTVlZECmZJdUhONjJXNG5yRm52THNDRnpQNWFwS0tISW50RWF3OFJac0lZV2IvSGxucnVHZElOY29IZEFvNnBFekVEK0gKZytXWFBHWk5UZitFYlNNQVpKdmZoZmVmcmhoWktwR3djcEs1Njl1MFNFblM3a2ZZa09McTlEc2wyUDhZRDRZRwp2T3daYXh2Y3ZxR05XMzZ3enVSejJzY1o4czFpSVVkZFZJamxWVktqYUhCZmhwb2VWdGdSdXpwcllzdXBSblR2ClFpenpjZ0FWCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K",
+                "tls.key": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBdXh4KzNXV21iUUx1eThDYjRXTExYOEtiTWhwSXYwWmRHZURVMUQ5YXc1WDkxTW9WCkdvaTA5dFZUSlIxMDRVcnlGcERGZEpGdm1PU3JGNGQwMXFRRzlvQW1hR3psTHdmOExJZ3BCcDBXM04rR242SnUKcEFkc0lLbDBPTG1oaDRkN1h1WVNkQ0JoYURKMkRyak9HejRsSTZ5cVVYVCtSVkdzcHpmc3VFaHhRK0M1bGorRgp0anpsRElBOHhJaEs1VlRBY0k2TXBMTGhsM2FHRVlybk5Ea0lpZ2FwM21SN3pYYTY4NXYxbnNZT0NJWUdHN2p5Cnk1SWRUL3ZIWnc2ZjhRc3dHRGhMYko3cUt1NERtUFRUdFBrb2hrUS83WXV6M2tFeEFIeDE3dFppYzRQNzhiMDUKaGNWY25vVURCS0Y5UGs1Q2xicE9lVmpDbmFaWHFnTUh1RUVzY1FJREFRQUJBb0lCQVFDcWx0STdPMysrQjF4NwpPd0ZqUFZVNTJ3enZZdk5NSC9TbHNVdVlycUlyaTBZK2lIY3hGODRVOUd5M2UrR2h2VmgxcGt1L2VSRUxqZjlHCmxtSzVoaFlyQ3E3NXFiNVJZTEJTVVZsR0JGWmh6UkRKM2FlTnVJNm1RSmdMVjRLak02d1EyeVdiNWlHb2c4a0sKcHdhUjQ5aXNhN0ZrVG91NzJ6alR3N0w0V0dPYmcyanJtZ0MxODBNS3BKb0pPa0QzMGttK2NjZjNDT3JSV1NVSgpGZHloc01LckJ4bjQrYWJUWWFBaytwRHJmUFA0dHE0Tk1nSFp1ZDEwRUJHVkVaeFlWMUs5MCt5ZGQ5aFpkbzYwCllveDlsZ0JSd1FJZTdNOGZsNTQwUkloSzd2L2lmdHhYdmgrRUtFdGI4dTFiNUVzY21sSDh4S3ZicHYvUWNuaUkKR3VlVWdQdzVBb0dCQU9wb3JZcXo3YVJwczFpZDRDdWlJNWZBRktpNDV5YlFSdDhHRzUwcDl4bXpIZTMvdGo0bAp5cHFWVkRnbE5TTkpOaWJCenB5dzlNNG9rNklSSFNlaFVKcThiRmlqT3U2b05RYXloMEg1RHRxNEFQMExaK2xLCmwyL1lTV3AvdXNLaGY1RU5XYTlmUXZTd3JqYkZwTkZqMjFsSXFZdE1XZ1JaeFdQaE9IN3pQSFl6QW9HQkFNeFkKakc5Y0Q5SDV6YWFrcDVUWXN2KzFobndzR0JiRCswS0F6ejhibnZ1TVhBYW15VkhoellOdzN6dUsxVThNb0t6YQp1OFNJeDMxUXprNnp3SUFjQmxJTmErRUdrazYxMjlaakJtY2pCQXUwaUdXVVpjT2Q5Ynl2T2lWZjhaa2xzd1JFClNwL0NwWXFGYnNPZER6T3JNV3laaUdJc1FTV2drODBSSkZiUWpNYkxBb0dBVjBlV3BuaU1XWldKMDhzazl0b3UKU29pWXFLSUFYM0Zaa2gwaUZ3alRHdHlZbmsrQ09lMjBYSTZSaHo1RFpOb1RzYWFrR2EvQjF5bEFueTJrSDJkdgpMYzVPd1VvMTNUc0FVM2dSNkx5bGpVYktCMjVCeUptZmZXT1pJbkJneDZ0K1pqSUVYTW9wa2haZko4Rzd0c05wCm52cnhOZzY5emJUblRHTkZ0KzgxYWdVQ2dZQnNBSWtJK25GcUcwdDBQaVpNWjFRRURwOHIxZXBOYmZ2SXBHZmwKQk9ZOE1XMGFIdURjcENtSXhRbFhZUU5vcWxYcHhobmp3QjhmdnF1cnNSbVhIRGpDK1ZFQk9BWHdEL0pIRjBOMQpFMjY1K1FyMkZUN0w2eHJNUlJqSVZETlBMRHUzajVpWlk3azJ3MXROakI5U3diSjNvWllSdlM0Wmd3dGJJU3BCCnNDd1hqUUtCZ0JOeFV3UEE3TzJSYSt1emxnUG5PV01veW5BLzk4ZzJZbm8vSUJ0NUR6S25aV2s0OVZBOEg4cHcKZU1VK01JRk9OU0ZjdVJoaFhCQmhBaElrZlFEOTN0UFdKOVhUTUV6RDFpMGdNOXhXRU80TWpZOTFqVHY5bzVtVwphcGpCaWwydXYxWGIxNjkzUGhtMWtkUTN1OFNmdzhxenpCQnVrMmluNkVuMHBqaVhPUnB1Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg=="
+            },
+            "kind": "Secret",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Secret\",\"metadata\":{\"annotations\":{},\"labels\":{\"app.kubernetes.io/name\":\"argocd-secret\",\"app.kubernetes.io/part-of\":\"argocd\"},\"name\":\"argocd-secret\",\"namespace\":\"argocd\"},\"type\":\"Opaque\"}\n"
+                },
+                "creationTimestamp": "2023-12-20T12:54:07Z",
+                "labels": {
+                    "app.kubernetes.io/name": "argocd-secret",
+                    "app.kubernetes.io/part-of": "argocd"
+                },
+                "name": "argocd-secret",
+                "namespace": "argocd",
+                "resourceVersion": "1679037",
+                "uid": "8f0bfccb-afa9-49e9-9b8f-90e1811e89e6"
+            },
+            "type": "Opaque"
+        },
+        {
+            "apiVersion": "v1",
+            "data": {
+                "config": "eyJ0bHNDbGllbnRDb25maWciOnsiaW5zZWN1cmUiOmZhbHNlfX0=",
+                "name": "aW4tY2x1c3Rlcg==",
+                "server": "aHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3Zj"
+            },
+            "kind": "Secret",
+            "metadata": {
+                "annotations": {
+                    "argocd.argoproj.io/refresh": "2023-12-30T03:24:13Z",
+                    "managed-by": "argocd.argoproj.io"
+                },
+                "creationTimestamp": "2023-12-30T03:24:13Z",
+                "labels": {
+                    "argocd.argoproj.io/secret-type": "cluster"
+                },
+                "name": "cluster-kubernetes.default.svc-3396314289",
+                "namespace": "argocd",
+                "resourceVersion": "1683988",
+                "uid": "0f17060a-6727-46ee-b657-afc31387b0d3"
+            },
+            "type": "Opaque"
+        },
+        {
+            "apiVersion": "v1",
+            "data": {
+                "password": "Z2hwXzNMdlZWZm90dXpoRVV3UkQxektFOWRrM1pxUTBBRzBHT3lkMQ==",
+                "type": "Z2l0",
+                "url": "aHR0cHM6Ly9naXRodWIuY29tL3RlY2hpbmFudXRzaGVsbGhhY2svYXBwbGljYXRpb24uZ2l0",
+                "username": "dGVjaGluYW51dHNoZWxsaGFjaw=="
+            },
+            "kind": "Secret",
+            "metadata": {
+                "annotations": {
+                    "managed-by": "argocd.argoproj.io"
+                },
+                "creationTimestamp": "2024-01-02T19:44:53Z",
+                "labels": {
+                    "argocd.argoproj.io/secret-type": "repository"
+                },
+                "name": "repo-812507214",
+                "namespace": "argocd",
+                "resourceVersion": "1721137",
+                "uid": "4d49373b-8cf6-4b42-9293-590152a0973f"
+            },
+            "type": "Opaque"
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

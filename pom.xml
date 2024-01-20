@@ -80,6 +80,24 @@
                 </execution>
             </executions>
 			</plugin>
+			<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>2.7</version> <!-- Use the latest version -->
+            <configuration>
+				<formats>
+					<format>html</format>
+					<format>xml</format>
+				<formats>
+				<reportSets>
+					<reportSet>
+						<reports>
+							 <report>cobertura</report>
+						<report>
+					<reportSet>
+				<reportSets>
+            </configuration>
+        </plugin>
 		</plugins>
 	</build>
 
