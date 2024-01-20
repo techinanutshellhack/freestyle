@@ -93,9 +93,9 @@
 					<reportSet>
 						<reports>
 							 <report>cobertura</report>
-						<report>
-					<reportSet>
-				<reportSets>
+						</report>
+					</reportSet>
+				</reportSets>
             </configuration>
         </plugin>
 		</plugins>
